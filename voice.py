@@ -7,6 +7,7 @@ import speech_recognition as sr
 def listen():
     recognizer = sr.Recognizer()
 
+# variables
     fs = 44100
     silence_threshold = 50
     silence_limit = 3.0
