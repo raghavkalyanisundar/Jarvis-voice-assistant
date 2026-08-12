@@ -86,7 +86,7 @@ def listen():
 # the speak function makes JARVIS talk by loading text into Ai engine and then returns text
 
 def speak(text):
-    engine = pyttsx3.init()   # NEW engine every time
+    engine = pyttsx3.init()  
     engine.say(text)
     engine.runAndWait()
     engine.stop() 

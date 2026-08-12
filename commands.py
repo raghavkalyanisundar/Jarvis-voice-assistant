@@ -3,9 +3,16 @@ import subprocess
 import webbrowser
 
 
+def open_radius():
+    print("Opening Radius")
+    webbrowser.open("https://radius.mathnasium.com/")
+
+
 def open_chrome():
     print("Opening Chrome...")
     subprocess.Popen(["start", "chrome"], shell=True)
+
+
 
 
 def open_work_schedule():
@@ -51,6 +58,11 @@ INTENTS = {
         "action_words": ["open", "launch", "pull"],
         "target_words": ["youtube"],
         "action": open_youtube,
+    },
+    "open_radius":{
+        "action_words":["open","launch","start"],
+        "target_words":["radius"],
+        "action":open_radius,
     },
 }
 

@@ -12,7 +12,7 @@ def ask_jarvis(user_input):
     )
     try:
         response = ollama.chat(
-        model='llama3',
+        model='qwen2.5:1.5b',
         messages=conversation
     )
         # extracts the message from the Ai safely to give the response
